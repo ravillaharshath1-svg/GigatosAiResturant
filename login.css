@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 1;
+    background-color: #dfe3e8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.logo img {
+    width: 150px;     /* Adjust size */
+    height: auto;
+}
+
+
+/* Welcome text */
+.welcome-text {
+    text-align: left;
+}
+
+.welcome-text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #3180cf;
+}
+
+.welcome-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box */
+.login-box {
+    width: 350px;
+}
+
+.login-box label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #7ee9c0;
+    font-size: 14px;
+}
+
+/* Password with eye icon */
+.password-field {
+    position: relative;
+    width: 100%;
+}
+
+.password-field input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 45px;   /* space for eye icon */
+    box-sizing: border-box;
+}
+
+#toggleIcon {
+    position: absolute;
+    right: 15px;          /* move to right side */
+    top: 50%;             /* center vertically */
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+/* Forgot password */
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #2c2c9e;
+}
+/* Popup background */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup box */
+.popup-content {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Input styling */
+.popup-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Buttons container */
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button style */
+.popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Cancel button */
+.cancel {
+    background: #0d0d0d;
+}
+
+/* Submit button */
+.submit {
+    background: #2dc553;
+    color: white;
+}
+
+.submit:hover {
+    opacity: 0.9;
+}
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+/* Login button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, #131314, #0f0f0f);
+}
+
+/* Button hover */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        height: 40vh;
+    }
+
+    .right {
+        height: 60vh;
+    }
+}
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+a{
+    text-decoration: none;
+}
+
